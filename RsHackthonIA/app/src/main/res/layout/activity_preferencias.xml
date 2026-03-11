@@ -11,9 +11,8 @@
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,23 +20,273 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/txtEvitar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:text="@string/preferencias"
-            android:textSize="34sp" />
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="497dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="186dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnCarne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/carne"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/btnVeg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/veg"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/btnBacon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/bacon"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/btnPrato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/prato"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/btnCebola"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/cebola"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/btnRefri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/refri"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/btnAlcool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/alcool"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnFrango"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/frango"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/btnDupla"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/dupla"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/btnOvo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/ovo"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/btnCheddar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/cheddar"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/btnSaladas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/saladas"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/btnSucos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/sucos"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/btnSorvete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/sorvete"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/btnChocolate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:text="@string/chocolate"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/btnVoltar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                android:text="@string/proximo" />
+                android:backgroundTint="#00FFFFFF"
+                android:text="@string/voltar"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:cornerRadius="5dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/btnProx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:text="@string/proximo"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:cornerRadius="5dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

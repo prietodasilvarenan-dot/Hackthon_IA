@@ -4,26 +4,56 @@
 
     <!-- MAIN ACTIVITY -->
     <string name="tituloMain">Seja Bem-vindo!</string>
-    <string name="localOuViagem">Deseja consumir no local ou levar para viagem?</string>
-    <string name="local">No Local</string>
-    <string name="viagem">Para Viagem</string>
+    <string name="localOuViagem">Consumo local ou para viagem?</string>
+    <string name="local">Local</string>
+    <string name="viagem">Viagem</string>
 
 
     <!-- PEDIDO ACTIVITY -->
-    <string name="tituloPedido">Deseja usar IA ou Efetuar o Pedido Normalmente?</string>
+    <string name="tituloPedido">Deseja pedir com ajuda de IA?</string>
     <string name="pedidoIa">Usar IA</string>
-    <string name="pedidoNormal">Normal</string>
+    <string name="pedidoNormal">Sem IA</string>
 
 
     <!-- PREFERENCIAS ACTIVITY -->
-    <string name="preferencias">Escolha suas Preferencias!</string>
+    <string name="preferencias">Escolha suas preferências!</string>
 
 
     <!-- ITENS A EVITAR ACTIVITY -->
-    <string name="evitar">Escolha os Itens que deseja Evitar</string>
+    <string name="evitar">Escolha os itens que deseja evitar</string>
 
+    <!-- CATEGORIAS ACTIVITY -->
+    <string name="fazerPedido">Selecione o desejado!</string>
+    <string name="descricao">Os hambúgueres,bebidas e sobremesas mais deliciosos da região!</string>
+    <string name="burguers">Burguers</string>
+    <string name="bebidas">Bebidas</string>
+    <string name="sobremesas">Sobremesas</string>
+
+    <!-- BURGUERS ACTIVITY -->
+    <string name="burguer">Selecione o seu burguer!</string>
+    <string name="classic">Classic</string>
+    <string name="salada">X-salada</string>
+    <string name="xbacon">X-bacon</string>
+    <string name="carne">Carne</string>
+    <string name="frango">Frango</string>
+    <string name="veg">Vegetariano</string>
+    <string name="dupla">Dupla carne</string>
+    <string name="ovo">Ovo</string>
+    <string name="bacon">Bacon</string>
+    <string name="cebola">Cebola</string>
+    <string name="prato">Queijo prato</string>
+    <string name="cheddar">Queijo Cheddar</string>
+    <string name="saladas">Saladas</string>
+    <string name="alcool">Bebidas Alcoólicas</string>
+    <string name="sucos">Sucos</string>
+    <string name="refri">Refrigerantes</string>
+    <string name="chocolate">Chocolates</string>
+    <string name="sorvete">Sorvetes</string>
 
     <!-- STRINGS GLOBAIS -->
+    <string name="adicionar">+</string>
+    <string name="remover">-</string>
     <string name="proximo">Próximo</string>
+    <string name="voltar">Voltar</string>
 
 </resources>

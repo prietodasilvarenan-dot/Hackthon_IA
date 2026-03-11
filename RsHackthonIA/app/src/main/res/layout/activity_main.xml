@@ -8,12 +8,11 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="409dp"
+        android:layout_width="400dp"
         android:layout_height="729dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,37 +20,75 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/txtViewTtile"
+            android:id="@+id/txtTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif"
             android:text="@string/tituloMain"
-            android:textSize="34sp" />
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/txtViewPergunta"
+            android:id="@+id/txtPergunta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
             android:text="@string/localOuViagem"
-            android:textSize="24sp" />
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="200sp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btnViagem"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
                 android:layout_weight="1"
-                android:text="@string/viagem" />
+                android:backgroundTint="#00050505"
+                android:fontFamily="sans-serif"
+                android:text="@string/viagem"
+                android:textColor="#000000"
+                android:textColorLink="#673AB7"
+                android:textSize="16sp"
+                app:cornerRadius="5dp"
+                app:icon="@drawable/icons8_take_away_food_100"
+                app:iconPadding="12dp"
+                app:iconSize="46dp"
+                app:iconTint="@color/black"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp" />
 
             <Button
                 android:id="@+id/btnLocal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100sp"
+                android:layout_height="160sp"
+                android:layout_marginEnd="25dp"
                 android:layout_weight="1"
-                android:text="@string/local" />
+                android:backgroundTint="#00050505"
+                android:fontFamily="sans-serif"
+                android:shadowColor="@color/black"
+                android:text="@string/local"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:cornerRadius="5dp"
+                app:icon="@drawable/icons8_comida_r_pida_100"
+                app:iconPadding="12dp"
+                app:iconSize="46dp"
+                app:iconTint="#000000"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
