@@ -9,6 +9,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+    lateinit var btnLocal: Button
+    lateinit var btnViagem: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -19,8 +22,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val btnLocal = findViewById<Button>(R.id.btnLocal)
-        val btnViagem = findViewById<Button>(R.id.btnViagem)
+        btnLocal = findViewById(R.id.btnLocal)
+        btnViagem = findViewById(R.id.btnViagem)
 
         btnLocal.setOnClickListener{
             IrParaTelaPedido()
@@ -29,7 +32,9 @@ class MainActivity : AppCompatActivity() {
             IrParaTelaPedido()
         }
     }
-    private fun IrParaTelaPedido(){
+
+
+    private fun IrParaTelaPedido() {
         val segundaTela = Intent(this, PedidoActivity::class.java)
         startActivity(segundaTela)
     }

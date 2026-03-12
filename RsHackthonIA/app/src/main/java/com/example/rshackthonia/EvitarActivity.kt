@@ -1,12 +1,17 @@
 package com.example.rshackthonia
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class EvitarActivity : AppCompatActivity() {
+    lateinit var btnProx: Button
+    lateinit var btnVoltar: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -16,5 +21,21 @@ class EvitarActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        btnProx = findViewById(R.id.btnProx)
+        btnVoltar = findViewById(R.id.btnVoltar)
+
+        btnProx.setOnClickListener { irParaTelaPreferencias() }
+        btnVoltar.setOnClickListener { voltarParaTelaAnterior() }
+    }
+
+    fun irParaTelaPreferencias(){
+        val telaPreferencias = Intent(this, PreferenciasActivity::class.java)
+        startActivity((telaPreferencias))
+    }
+
+    fun voltarParaTelaAnterior(){
+        val telaAnterior = Intent(this, PedidoActivity::class.java)
+        startActivity((telaAnterior))
     }
 }
